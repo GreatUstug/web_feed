@@ -1,0 +1,72 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    width: 385px;
+    height: 180px;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 180px;
+    letter-spacing: -1.5px;
+    position: absolute;
+    margin-top: 182.37px;
+    margin-left: 179px;
+    z-index: 2;
+}
+
+.loginimg{
+    position: absolute;
+    top: 289px;
+    left: 269px;
+    z-index: 1;
+}
+
+#entrance{
+    position: absolute;
+    width: 343px;
+    height: 251px;
+    top: 415px;
+    left: 838px;
+    gap: 32px;
+}
+
+.label{
+    width: 343px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: #222222;
+}
+
+.container{
+    width: 343px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: #F2F3F5;
+    border-color: #F2F3F5;    
+}
+
+.description{
+    width: 343px;
+    height: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+    color: #808080;
+}
+
+.button{
+    width: 343px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #FFFFFF;
+    background-color: #222222;
+}

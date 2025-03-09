@@ -1,0 +1,67 @@
+* {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.15px;
+    line-height: 18px;
+    color: #222222;
+}
+
+#posts {
+    width: 474px;
+    height: 1388px;
+    top: 73px;
+    left: 482px;
+    z-index: 1;
+}
+
+.postvanya{
+    position: relative;
+    width: 700px;
+    height: 474px;
+    rotate: -90;
+}
+
+.postliza{
+    position: relative;
+    height: 638px;
+    width: 474px;
+    rotate: -90;
+}
+
+.user {
+    width: 90px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.comment {
+    width: 474px;
+    height: 37px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    z-index: 2;
+    top: 600px;
+}
+
+.expansion {
+    width: 28px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #808080;
+    z-index: 2;
+    top: 636px;
+}
+
+.time {
+    width: 79px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 400px;
+    color: rgba(34, 34, 34, 0.5);
+    z-index: 2;
+}

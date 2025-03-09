@@ -1,0 +1,53 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222222;
+    position: absolute;
+}
+
+h1 {
+    width: 361px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: -0,25px;
+    text-align: center;
+    text-align: middle;
+    top: 240px;
+    left: 539.5px;
+}
+
+.avatar{
+    top: 97px;
+    left: 658.5px;
+}
+
+.aboutme{
+    width: 361px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    text-align: center;
+    top: 282px;
+    left: 539.5px;
+}
+
+.posts{
+    width: 101px;
+    height: 30px;
+    text-align: right;
+    border-radius: 6px;
+    background-color: #f2f3f5;
+    top: 330px;
+    left: 669.5px;
+}
+
+#images{
+    width: 972px;
+    height: 1621.65px;
+    gap: 2.48px;
+    top: 402px;
+    left: 234px;
+}
