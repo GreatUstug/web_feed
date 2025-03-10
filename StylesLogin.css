@@ -31,6 +31,25 @@ h1{
     gap: 32px;
 }
 
+#containers{
+    width: 343px;
+    height: 171px;
+    z-index: 1;
+}
+
+#fmail{
+    position: relative;
+    width: 343px;
+    height: 88px;
+    gap: 5px;
+}
+
+#fpass{
+    position: relative;
+    width: 343px;
+    height: 67px;
+}
+
 .label{
     width: 343px;
     height: 18px;
@@ -42,6 +61,7 @@ h1{
 }
 
 .container{
+    position: relative;
     width: 343px;
     height: 44px;
     border-radius: 10px;
@@ -60,13 +80,15 @@ h1{
 }
 
 .button{
+    position: relative;
     width: 343px;
     height: 48px;
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
+    z-index: 1;
     padding-left: 16px;
     padding-right: 16px;
     color: #FFFFFF;
     background-color: #222222;
-}
+} 
