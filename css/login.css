@@ -1,58 +1,57 @@
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 h1{
-    width: 385px;
-    height: 180px;
+    max-width: 385px;
+    max-height: 180px;
     font-size: 140px;
     font-weight: 700;
     line-height: 180px;
     letter-spacing: -1.5px;
-    position: absolute;
     margin-top: 182.37px;
     margin-left: 179px;
     z-index: 2;
 }
 
-.loginimg{
-    position: absolute;
+#loginimg{
+    max-width: 462px; 
+    max-height: 501px;
     top: 289px;
     left: 269px;
     z-index: 1;
 }
 
 #entrance{
-    position: absolute;
-    width: 343px;
-    height: 251px;
+    max-width: 343px;
+    max-height: 251px;
     top: 415px;
     left: 838px;
     gap: 32px;
 }
 
 #containers{
-    width: 343px;
-    height: 171px;
+    max-width: 343px;
+    max-height: 171px;
     z-index: 1;
 }
 
 #fmail{
-    position: relative;
-    width: 343px;
-    height: 88px;
+    max-width: 343px;
+    max-height: 88px;
     gap: 5px;
 }
 
 #fpass{
-    position: relative;
-    width: 343px;
-    height: 67px;
+    max-width: 343px;
+    max-height: 67px;
 }
 
 .label{
-    width: 343px;
-    height: 18px;
+    max-width: 343px;
+    max-height: 18px;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
@@ -61,17 +60,16 @@ h1{
 }
 
 .container{
-    position: relative;
-    width: 343px;
-    height: 44px;
+    max-width: 343px;
+    max-height: 44px;
     border-radius: 10px;
     background-color: #F2F3F5;
     border-color: #F2F3F5;    
 }
 
 .description{
-    width: 343px;
-    height: 16px;
+    max-width: 343px;
+    max-height: 16px;
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
@@ -80,7 +78,6 @@ h1{
 }
 
 .button{
-    position: relative;
     width: 343px;
     height: 48px;
     font-size: 16px;
