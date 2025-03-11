@@ -13,23 +13,31 @@
 }
 
 .postvanya{
-    max-width: 700px;
+    max-width: 474px;
+    max-height: 700px;
+}
+
+.winterstreet{
+    max-width: 474px;
     max-height: 474px;
-    rotate: -90;
+}
+
+.stilllife{
+    max-width: 638px;
+    max-height: 474px;
 }
 
 .postliza{
-    position: relative;
-    max-height: 638px;
     max-width: 474px;
-    rotate: -90;
+    max-height: 638px;
 }
 
 .user{
-    max-width: 90px;
+    max-width: 91px;
     max-height: 18px;
     font-size: 14px;
     font-weight: 500;
+    vertical-align: middle;
 }
 
 .comment{
@@ -55,11 +63,16 @@
     font-size: 14px;
     font-weight: 400px;
     color: rgba(34, 34, 34, 0.5);
-    z-index: 2;
+    vertical-align: middle;
 }
 
 .userimage{
     max-width: 32px;
     max-height: 32px;
     border-radius: 6px;
+}
+
+.reaction{
+    max-width: 68px;
+    max-height: 30px;
 }
