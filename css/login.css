@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.login_text{
+.login__text{
     max-width: 385px;
     max-height: 180px;
     font-size: 140px;
@@ -13,7 +13,7 @@
     letter-spacing: -1.5px;
 }
 
-.loginimg{
+.login__img{
     max-width: 462px; 
     max-height: 501px;
 }
@@ -30,13 +30,13 @@
     gap: 16px;
 }
 
-.flogin{
+.container__login{
     max-width: 343px;
     max-height: 88px;
     gap: 5px;
 }
 
-.fpass{
+.container__pass{
     max-width: 343px;
     max-height: 66px;
     gap: 5px;
