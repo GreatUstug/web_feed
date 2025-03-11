@@ -4,49 +4,42 @@
     height: 100%;
 }
 
-h1{
+.login_text{
     max-width: 385px;
     max-height: 180px;
     font-size: 140px;
     font-weight: 700;
     line-height: 180px;
     letter-spacing: -1.5px;
-    margin-top: 182.37px;
-    margin-left: 179px;
-    z-index: 2;
 }
 
-#loginimg{
+.loginimg{
     max-width: 462px; 
     max-height: 501px;
-    top: 289px;
-    left: 269px;
-    z-index: 1;
 }
 
-#entrance{
+.entrance{
     max-width: 343px;
     max-height: 251px;
-    top: 415px;
-    left: 838px;
     gap: 32px;
 }
 
-#containers{
+.containers{
     max-width: 343px;
     max-height: 171px;
-    z-index: 1;
+    gap: 16px;
 }
 
-#fmail{
+.flogin{
     max-width: 343px;
     max-height: 88px;
     gap: 5px;
 }
 
-#fpass{
+.fpass{
     max-width: 343px;
-    max-height: 67px;
+    max-height: 66px;
+    gap: 5px;
 }
 
 .label{
@@ -63,6 +56,8 @@ h1{
     max-width: 343px;
     max-height: 44px;
     border-radius: 10px;
+    justify-content: space-between;
+    padding: 13px, 12px, 13px, 12px;
     background-color: #F2F3F5;
     border-color: #F2F3F5;    
 }
@@ -77,13 +72,12 @@ h1{
     color: #808080;
 }
 
-.button{
+.buttonlog{
     width: 343px;
     height: 48px;
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
-    z-index: 1;
     padding-left: 16px;
     padding-right: 16px;
     color: #FFFFFF;
