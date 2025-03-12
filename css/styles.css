@@ -1,0 +1,85 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.login__text{
+    max-width: 385px;
+    max-height: 180px;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 180px;
+    letter-spacing: -1.5px;
+}
+
+.login__img{
+    max-width: 462px; 
+    max-height: 501px;
+}
+
+.entrance{
+    max-width: 343px;
+    max-height: 251px;
+    gap: 32px;
+}
+
+.containers{
+    max-width: 343px;
+    max-height: 171px;
+    gap: 16px;
+}
+
+.container__login{
+    max-width: 343px;
+    max-height: 88px;
+    gap: 5px;
+}
+
+.container__pass{
+    max-width: 343px;
+    max-height: 66px;
+    gap: 5px;
+}
+
+.label{
+    max-width: 343px;
+    max-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: #222222;
+}
+
+.container{
+    max-width: 343px;
+    max-height: 44px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 13px, 12px, 13px, 12px;
+    background-color: #F2F3F5;
+    border-color: #F2F3F5;    
+}
+
+.description{
+    max-width: 343px;
+    max-height: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+    color: #808080;
+}
+
+.button__login{
+    width: 343px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #FFFFFF;
+    background-color: #222222;
+} 
