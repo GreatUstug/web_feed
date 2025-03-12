@@ -161,3 +161,50 @@
     max-width: 68px;
     max-height: 30px;
 }
+
+.nickname {
+    max-width: 361px;
+    max-height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: -0,25px;
+    text-align: center;
+    text-align: middle;
+}
+
+.avatar{
+    max-width: 123px;
+    max-height: 123px;
+}
+
+.aboutme{
+    width: 361px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    text-align: center;
+}
+
+.posts{
+    width: 101px;
+    height: 30px;
+    text-align: right;
+    border-radius: 6px;
+    background-color: #f2f3f5;
+}
+
+.images{
+    max-width: 972px;
+    max-height: 1621.65px;
+    gap: 2.48px;
+}
+
+.images__image{
+    max-width: 321px;
+    border-radius: 2px;
+    max-height: 321px;
+    color: #b4b4b4;
+}
