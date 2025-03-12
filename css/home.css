@@ -12,22 +12,22 @@
     max-height: 1388px;
 }
 
-.posts_post__vanya{
+.posts__post__vanya{
     max-width: 474px;
     max-height: 700px;
 }
 
-.post__vanya_winter__street{
+.post__vanya__winter__street{
     max-width: 474px;
     max-height: 474px;
 }
 
-.post__liza_still__life{
+.post__liza__still__life{
     max-width: 638px;
     max-height: 474px;
 }
 
-.posts_post__liza{
+.posts__post__liza{
     max-width: 474px;
     max-height: 638px;
 }
@@ -40,7 +40,7 @@
     vertical-align: middle;
 }
 
-.postvanya__comment{
+.post__vanya__comment{
     max-width: 474px;
     max-height: 37px;
     font-size: 15px;
@@ -72,7 +72,7 @@
     border-radius: 6px;
 }
 
-.postvanya__reaction{
+.post__vanya__reaction{
     max-width: 68px;
     max-height: 30px;
 }

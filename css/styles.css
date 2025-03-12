@@ -1,5 +1,8 @@
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.15px;
+    line-height: 18px;
+    color: #222222;
     width: 100%;
     height: 100%;
 }
@@ -82,4 +85,79 @@
     padding-right: 16px;
     color: #FFFFFF;
     background-color: #222222;
-} 
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.posts{
+    max-width: 474px;
+    max-height: 1388px;
+}
+
+.posts__post__vanya{
+    max-width: 474px;
+    max-height: 700px;
+}
+
+.post__vanya__winter__street{
+    max-width: 474px;
+    max-height: 474px;
+}
+
+.post__liza__still__life{
+    max-width: 638px;
+    max-height: 474px;
+}
+
+.posts__post__liza{
+    max-width: 474px;
+    max-height: 638px;
+}
+
+.posts__user{
+    max-width: 91px;
+    max-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.post__vanya__comment{
+    max-width: 474px;
+    max-height: 37px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+}
+
+.post__vanya__expansion{
+    max-width: 28px;
+    max-height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.post__vanya__time{
+    max-width: 79px;
+    max-height: 18px;
+    font-size: 14px;
+    font-weight: 400px;
+    color: rgba(34, 34, 34, 0.5);
+    vertical-align: middle;
+}
+
+.posts__user__image{
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 6px;
+}
+
+.post__vanya__reaction{
+    max-width: 68px;
+    max-height: 30px;
+}
