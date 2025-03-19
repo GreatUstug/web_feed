@@ -18,13 +18,13 @@
     max-height: 501px;
 }
 
-.entrance{
+.login__entrance{
     max-width: 343px;
     max-height: 251px;
     gap: 32px;
 }
 
-.containers{
+.entrance__container{
     max-width: 343px;
     max-height: 171px;
     gap: 16px;
@@ -42,7 +42,7 @@
     gap: 5px;
 }
 
-.label{
+.container__label{
     max-width: 343px;
     max-height: 18px;
     font-size: 15px;
@@ -52,7 +52,7 @@
     color: #222222;
 }
 
-.container{
+.container__input{
     max-width: 343px;
     max-height: 44px;
     border-radius: 10px;
@@ -62,7 +62,7 @@
     border-color: #F2F3F5;    
 }
 
-.description{
+.container__description{
     max-width: 343px;
     max-height: 16px;
     font-size: 13px;
@@ -72,9 +72,9 @@
     color: #808080;
 }
 
-.button__login{
-    width: 343px;
-    height: 48px;
+.entrance__button{
+    max-width: 343px;
+    max-height: 48px;
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
@@ -82,4 +82,4 @@
     padding-right: 16px;
     color: #FFFFFF;
     background-color: #222222;
-} 
+}

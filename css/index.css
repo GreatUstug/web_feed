@@ -52,4 +52,19 @@
     color: #b4b4b4;
 }
 
+.side__icons__side__icon{
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.side__bar__side__icons{
+    max-width: 40px;
+    max-height: 40px;
+    align:center,         ;
+}
+
+.side__bar{
+    max-width: 72px;
+    max-height: 1080px;
+}
 

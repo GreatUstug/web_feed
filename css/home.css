@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.15px;
     line-height: 18px;
@@ -7,32 +7,32 @@
     color: #222222;
 }
 
-.posts{
+.posts {
     max-width: 474px;
     max-height: 1388px;
 }
 
-.posts__post__vanya{
+.posts__post__vanya {
     max-width: 474px;
     max-height: 700px;
 }
 
-.post__vanya__winter__street{
+.post__vanya__winter__street {
     max-width: 474px;
     max-height: 474px;
 }
 
-.post__liza__still__life{
+.post__liza__still__life {
     max-width: 638px;
     max-height: 474px;
 }
 
-.posts__post__liza{
+.posts__post__liza {
     max-width: 474px;
     max-height: 638px;
 }
 
-.posts__user{
+.posts__user {
     max-width: 91px;
     max-height: 18px;
     font-size: 14px;
@@ -40,7 +40,7 @@
     vertical-align: middle;
 }
 
-.post__vanya__comment{
+.post__vanya__comment { 
     max-width: 474px;
     max-height: 37px;
     font-size: 15px;
@@ -49,7 +49,7 @@
     letter-spacing: -0.15px;
 }
 
-.post__vanya__expansion{
+.post__vanya__expansion {
     max-width: 28px;
     max-height: 18px;
     font-size: 15px;
@@ -57,7 +57,7 @@
     color: #808080;
 }
 
-.post__vanya__time{
+.post__vanya__time {
     max-width: 79px;
     max-height: 18px;
     font-size: 14px;
@@ -66,13 +66,23 @@
     vertical-align: middle;
 }
 
-.posts__user__image{
+.posts__user__image {
     max-width: 32px;
     max-height: 32px;
     border-radius: 6px;
 }
 
-.post__vanya__reaction{
+.post__vanya__reaction {
     max-width: 68px;
     max-height: 30px;
+}
+
+.side__bar{
+    max-width: 72px;
+    max-height: 1080px;
+}
+
+.side__bar__side__icons {
+    max-width: 24px;
+    max-height: 24px;
 }

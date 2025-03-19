@@ -1,4 +1,4 @@
-* {
+*{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.15px;
     line-height: 18px;
@@ -27,7 +27,7 @@
     gap: 32px;
 }
 
-.containers{
+.entrance__containers{
     max-width: 343px;
     max-height: 171px;
     gap: 16px;
@@ -45,7 +45,7 @@
     gap: 5px;
 }
 
-.label{
+.containers__label{
     max-width: 343px;
     max-height: 18px;
     font-size: 15px;
@@ -85,11 +85,6 @@
     padding-right: 16px;
     color: #FFFFFF;
     background-color: #222222;
-}
-
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 
 .posts{
