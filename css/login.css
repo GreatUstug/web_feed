@@ -30,7 +30,7 @@
     gap: 16px;
 }
 
-.container__login{
+.entrance__login{
     max-width: 343px;
     max-height: 88px;
     gap: 5px;
@@ -42,7 +42,7 @@
     gap: 5px;
 }
 
-.container__label{
+.entrance__label{
     max-width: 343px;
     max-height: 18px;
     font-size: 15px;
@@ -52,7 +52,7 @@
     color: #222222;
 }
 
-.container__input{
+.entrance__input{
     max-width: 343px;
     max-height: 44px;
     border-radius: 10px;
@@ -62,7 +62,7 @@
     border-color: #F2F3F5;    
 }
 
-.container__description{
+.entrance__description{
     max-width: 343px;
     max-height: 16px;
     font-size: 13px;

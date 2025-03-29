@@ -40,7 +40,7 @@
     vertical-align: middle;
 }
 
-.post__vanya__comment { 
+.post__comment { 
     max-width: 474px;
     max-height: 37px;
     font-size: 15px;
@@ -57,7 +57,7 @@
     color: #808080;
 }
 
-.post__vanya__time {
+.post__time {
     max-width: 79px;
     max-height: 18px;
     font-size: 14px;
