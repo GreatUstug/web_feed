@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    $json = file_get_contents('posts.json');
+    $json = file_get_contents('json/posts.json');
     $data = json_decode($json, true);
 ?>
 <html lang="ru">
