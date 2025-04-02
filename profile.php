@@ -3,22 +3,22 @@
 
     require_once('validation.php');
 
-    $json = file_get_contents('json/profile.json');
-    $data = json_decode($json, true);
+    $Json = file_get_contents('json/profile.json');
+    $Data = json_decode($Json, true);
 
-    $id = isset($_GET['id']) ? $_GET['id'] : null;
-    if ($id === null){
+    $Id = isset($_GET['id']) ? $_GET['id'] : null;
+    if ($Id === null){
         header("Location: home.php");
         exit;
         }
     
-    if (!is_numeric($id)) {
+    if (!is_numeric($Id)) {
         header("Location: home.php");
         exit;
         }        
         
 
-    if (!array_key_exists($id, $data)) {
+    if (!array_key_exists($Id, $Data)) {
         header("Location: home.php");
         exit;
         }
@@ -27,8 +27,8 @@
     //     validateLength($key);
     //     if (validateType($key, "array"))
     // }
-    $id = $_GET['id'];
-    $user = $data[$id];    
+    $Id = $_GET['id'];
+    $user = $Data[$Id];    
 ?>
 <html lang="ru">
     <head>
@@ -42,9 +42,8 @@
         <p class="aboutme"><?php echo htmlspecialchars($user['aboutme']); ?></p>
         <p class="posts">43 поста</p>
         <div class="images">
-        <?php foreach($user['images'] as $image){
-            //echo"$image";    
-            echo "<img src=" . $image .' '.'alt="image_from_user" class="images__image">';
+        <?php foreach($user['images'] as $Image){    
+            echo "<img src=" . $Image .' '.'alt="image_from_user" class="images__image">';
          }?>
         </div>
      </body>

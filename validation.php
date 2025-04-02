@@ -1,30 +1,29 @@
 <?php
-function validateLength($value)
+function validateLength($Value)
 {
-    if (strlen($value) < 0) {
+    if (strlen($Value) < 0) {
         return false;
     }
-    if (strlen($value) > PHP_INT_MAX) {
+    if (strlen($Value) > PHP_INT_MAX) {
         return false;
-    }    
+    }
 }
 
-function validatedate($value)
+function validatedate($Value)
 {
-    return((int) $value >= 0) && ((string)(int) $value === (string) $value);
+    return ((int) $Value >= 0) && ((string)(int) $Value === (string) $Value);
 }
 
-function validateType($value, $type)
+function validateType($Value, $Type)
 {
-    switch ($type) {
+    switch ($Type) {
         case 'int':
-            return is_int($value);
+            return is_int($Value);
         case 'string':
-            return is_string($value);
+            return is_string($Value);
         case 'array':
-            return is_array($value);    
+            return is_array($Value);
         default:
-            throw new InvalidArgumentException("Unknown type: {$type}");
+            throw new InvalidArgumentException("Unknown type: {$Type}");
     }
-}        
-?>
+}

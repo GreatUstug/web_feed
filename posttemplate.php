@@ -1,10 +1,9 @@
 <?php
-    $json = file_get_contents('json/posts.json');
-    $data = json_decode($json, true);
-    $id = $_GET['id'];
-    $posts = $data[$id];
+$Json = file_get_contents('json/posts.json');
+$Data = json_decode($Json, true);
+$Id = $_GET['id'];
+$posts = $Data[$Id];
 
-    foreach($posts as $data) {
-        require("postpattern.php");
-    }
-?>
+foreach ($posts as $Data) {
+    require("postpattern.php");
+}
