@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <?php
+
+    require_once('validation.php');
+
     $json = file_get_contents('json/profile.json');
     $data = json_decode($json, true);
 
     $id = isset($_GET['id']) ? $_GET['id'] : null;
-    if (($id === null) or (!is_numeric($id))) {
+    if ($id === null){
         header("Location: home.php");
         exit;
         }
+    
+    if (!is_numeric($id)) {
+        header("Location: home.php");
+        exit;
+        }        
+        
+
+    if (!array_key_exists($id, $data)) {
+        header("Location: home.php");
+        exit;
+        }
+    
+    // foreach ($data[$id] as $key) {
+    //     validateLength($key);
+    //     if (validateType($key, "array"))
+    // }
     $id = $_GET['id'];
     $user = $data[$id];    
 ?>
