@@ -78,11 +78,15 @@
 }
 
 .side__bar{
+    display: flex;
     max-width: 72px;
     max-height: 1080px;
+    justify-content: space-between;
+    flex-flow:column-reverse;
 }
 
 .side__bar__side__icons {
     max-width: 24px;
     max-height: 24px;
 }
+

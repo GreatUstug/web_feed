@@ -19,6 +19,9 @@
 }
 
 .login__entrance{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
     max-width: 343px;
     max-height: 251px;
     gap: 32px;
