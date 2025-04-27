@@ -33,7 +33,6 @@
 }
 
 .posts__button{
-    align-self: center;
     width: 101px;
     height: 30px;
     text-align: right;
@@ -67,7 +66,7 @@
     display: flex;
     max-width: 40px;
     max-height: 40px;
-    justify-content: center,         ;
+    justify-content: center;
 }
 
 .picture{
@@ -85,11 +84,9 @@
 .side__bar{
     max-height: 1080px;
     display: flex;
-    justify-content:flex-start;
-    align-content:center;
+    justify-content: space-between;
+    align-items:flex-start;
     flex-flow: column;
-    border-color: #222222;
-    border: 20px;
 }
 
 .container__page{
@@ -97,4 +94,15 @@
     align-items: center;
     justify-content: space-between;
     flex-flow: column;
+}
+
+.profile__button{
+    display: flex;
+    justify-content: center;
+}
+
+.posts__button__image{
+    z-index: 2;
+    justify-self: center;
+
 }

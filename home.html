@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/home.css">
-        <title>Посты</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Посты</title>
+</head>
+
+<body>
+    <div class="side__bar">
         <img src="images/home.png" alt="icon_home" class="side__bar__side__icons">
         <img src="images/user.png" alt="icon_user" class="side__bar__side__icons">
         <img src="images/plus.png" alt="icon_plus" class="side__bar__side__icons">
-        <div class="posts__post__vanya">
-            <img src="images/vanya.png" alt="vanya_denisov" class="posts__user__image"> 
-            <p class="posts__user">Ваня Денисов</p>
-            <img src="images/winter_street.png" alt="winter_street" class="post__vanya__winter__street">
-            <br>
-            <img src="images/reaction.png" alt="reaction" class="post__vanya__reaction">
-            <p class="post__vanya__comment">Так красиво сегодня на улице! Настоящая зима))
-            Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом
-            дне, в гор...</p>
-            <p class="post__vanya__expansion">ещё</p>
-            <p class="post__vanya__time">2 часа назад</p>
-        </div>    
-        <br>
-        <div class="posts__post__liza">
-            <img src="images/liza.png" alt="liza_demina" class="posts__user__image">
-            <p class="posts__user">Лиза Демина</p>
-            <img src="images/still_life.png" alt="still_life" class="post__liza__still__life">
-        </div>            
-    </body>
+    </div>
+    <div class="container">
+        <div class="container__posts">
+            <div class="post">
+                <div class="post__user">
+                    <img src="images/vanya.png" alt="vanya_denisov" class="posts__user__image">
+                    <p class="posts__user">Ваня Денисов</p>
+                    <img src="images/edit.png" alt="edit" class="post__edit">
+                </div>
+                <img src="images/winter_street.png" alt="winter_street" class="post__vanya__winter__street">
+                <img src="images/reaction.png" alt="reaction" class="post__vanya__reaction">
+                <div class="post__comment__">
+                    <p class="post__vanya__comment">Так красиво сегодня на улице! Настоящая зима))
+                        Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом
+                        дне, в гор...</p>
+                    <p class="post__vanya__expansion">ещё</p>
+                </div>
+                <p class="post__vanya__time">2 часа назад</p>
+            </div>
+            <div class="posts__post__liza">
+                <div class="post__user">
+                    <img src="images/liza.png" alt="liza_demina" class="posts__user__image">
+                    <p class="posts__user">Лиза Демина</p>
+                    <img src="images/edit.png" alt="edit" class="post__edit">
+                </div>
+                <img src="images/still_life.png" alt="still_life" class="post__liza__still__life">
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

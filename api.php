@@ -10,38 +10,46 @@ if ($method !== 'POST') {
 
 $data = json_decode(file_get_contents('php://input'), true);
 
-$requiredFields = ['id', 'title', 'subtitle', 'content', 'user_id', 'posted_at'];
-foreach ($requiredFields as $field) {
-    if (!isset($data[$field]) || empty($data[$field])) {
-        http_response_code(400); // Код ошибки 400 Bad Request
-        echo json_encode(['error' => "Поле '$field' обязательно"]);
-        exit();
-    }
+// Проверка обязательных полей
+if (!isset($data["title"]) || !isset($data["content"])) {
+    http_response_code(400); // Bad Request
+    echo json_encode(['message' => 'Отсутствуют обязательные поля']);
+    exit();
 }
 
-// Сохранение изображения
-
-if (isset($data["image"]) && !empty($data["image"])) {
+// Загрузка изображения (если передано)
+$fileName = '';
+if ($_FILES && isset($_FILES['image'])) {
+    $fileName = basename($_FILES['image']['name']);
     $targetDir = __DIR__ . '/images/';
-    $fileName = basename($data['image']);
     $targetFilePath = $targetDir . $fileName;
+    move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath);
 }
 
-// Данные
-$id = $data['id'];
-$title  = $data['title'];
-$subtitle = $data['subtitle'];
-$content = $data['content'];
-$user_id = $data['user_id'];
-$posted_at = $data['posted_at'];
-//Запрос
+// Данные для записи в БД
+$postData = [
+    "title" => htmlspecialchars($data['title']),
+    "content" => htmlspecialchars($data['content']),
+    "author_id" => intval($data['author_id']),
+    "category_id" => intval($data['category_id']),
+    "image_path" => $fileName ? $targetFilePath : ''
+];
+
+// Соединение с базой данных
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=blog", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=your_database", "username", "password");
+    $stmt = $pdo->prepare(
+        "INSERT INTO posts (title, content, author_id, category_id, image_path)
+         VALUES (:title, :content, :author_id, :category_id, :image_path)"
+    );
+    $stmt->execute($postData);
 
-    // SQL-запрос для вставки данных
-    $sql = "INSERT INTO post (id, title, subtitle, content, user_id, posted_at) VALUES ($id, $title, $subtitle, $content, $user_id, $posted_at)";
-    $affectedRowsNumber = $conn->exec($sql);
-    echo "В таблицу post добавлено строк: $affectedRowsNumber";
-} catch (PDOException $e) {
-    echo "Ошибка подключения к базе данных: " . $e->getMessage();
+    // Успешное создание поста
+    http_response_code(201); // Created
+    echo json_encode(['message' => 'Пост успешно создан', 'id' => $pdo->lastInsertId()]);
+
+} catch(PDOException $e) {
+    http_response_code(500); // Internal Server Error
+    echo json_encode(['message' => 'Ошибка базы данных']);
 }
+?>
