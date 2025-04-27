@@ -1,6 +1,6 @@
 function mapObject(obj, callback) {
     const newObj = {};           // Создаем пустой объект для результата
-    
+
     // Проходим по всем собственным свойствам объекта
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
@@ -8,8 +8,8 @@ function mapObject(obj, callback) {
             newObj[key] = callback(obj[key]);
         }
     }
-    
-    return newObj; 
+
+    return newObj;
 }
 
 const nums = { a: 1, b: 2, c: 3 };
