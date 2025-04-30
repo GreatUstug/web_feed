@@ -7,10 +7,10 @@ function password(passlen) {
         const allsymbols = lowercaseLetters + uppercaseLetters + digits + specialChars;
 
         const requiredSymbols = [
-            lowercaseLetters.charAt(Math.floor(Math.random() * lowercaseLetters.length)),  // маленькая буква
-            uppercaseLetters.charAt(Math.floor(Math.random() * uppercaseLetters.length)),  // большая буква
-            digits.charAt(Math.floor(Math.random() * digits.length)),                     // цифра
-            specialChars.charAt(Math.floor(Math.random() * specialChars.length))          // спецсимвол
+            lowercaseLetters.charAt(Math.floor(Math.random() * lowercaseLetters.length)),
+            uppercaseLetters.charAt(Math.floor(Math.random() * uppercaseLetters.length)),
+            digits.charAt(Math.floor(Math.random() * digits.length)),         
+            specialChars.charAt(Math.floor(Math.random() * specialChars.length))
         ];
 
         while (requiredSymbols.length < passlen) {

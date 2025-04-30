@@ -1,10 +1,8 @@
 function mapObject(obj, callback) {
-    const newObj = {};           // Создаем пустой объект для результата
+    const newObj = {};
 
-    // Проходим по всем собственным свойствам объекта
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
-            // Применяем callback к значению текущего свойства
             newObj[key] = callback(obj[key]);
         }
     }

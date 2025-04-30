@@ -3,12 +3,12 @@ function uniqueelements(arr) {
         const result = {};
 
         arr.forEach(item => {
-            let key = String(item);   // Преобразуем любой элемент в строку
+            let key = String(item);
 
-            if (!result[key]) {       // Если такого ключа ещё нет
-                result[key] = 1;      // Создаем новый ключ с единицей
+            if (!result[key]) {
+                result[key] = 1;
             } else {
-                result[key]++;        // Иначе увеличиваем счётчик
+                result[key]++;
             }
         });
 

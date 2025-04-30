@@ -11,10 +11,10 @@ function checkIsPrime(n){
 }
 
 function isPrimeNumber(input) {
-    if (typeof input === 'number') { // Обработка одного числа
+    if (typeof input === 'number') {
         const result = checkIsPrime(input);
         console.log(`${input} ${result ? '' : 'не'}простое число`);
-    } else if (Array.isArray(input)) { // Обработка массива чисел
+    } else if (Array.isArray(input)) {
         let primes = [];
         let nonPrimes = [];
 

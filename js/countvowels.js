@@ -17,4 +17,4 @@ function countvawers(input){
     }
 }
 
-countvawers('ааааааааааааааааааааааааааааааааааааааааааааааааааааа')
+countvawers('Привет Мир!')

@@ -9,7 +9,7 @@
 
 .post{
     max-width: 474px;
-    max-height: 700px;
+    max-height: 800px;
 }
 
 .post__image {
@@ -60,4 +60,12 @@
 .post__reaction {
     max-width: 68px;
     max-height: 30px;
+}
+
+.posts__user {
+    max-width: 91px;
+    max-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
 }

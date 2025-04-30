@@ -1,20 +1,14 @@
-<!DOCTYPE html>
 
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/post.css">
-    </head>
-    <body>
+        <br>
         <div class="post">
-            <img src=<?=$Data['userimageid']?> alt="user_image" class="post__user__image"> 
-            <p class="post__username"><?=$Data['username']?></p>
-            <img src=<?=$Data['postimage']?> alt="post_image" class="post__image">
-            <img src="images/reaction.png" alt="reaction" class="post__reaction">
-            <p class="post__comment"><?=$Data['description']?></p>
+        <img src="images/nedurka/avatar.png" alt="avatar" class="post__user__image">
+        <p class="posts__user">(Не)дурка</p>
+            <p class="post__username"><?=$post['title']?></p>
+            <p class="post__username"><?=$post['subtitle']?></p>
+            <img src=<?=$post['im']?> alt="post_image" class="post__image">
+            <img src="images/reaction.png" alt="reaction" class="post__reaction"> 
+            <p class="post__comment"><?=$post['content']?></p>
             <p class="comment__expansion">ещё</p>
-            <p class="post__time"><?=$Data['uploadtime']?></p>
-            <br>
-        </div>    
-    </body>
-</html>
+            <p class="post__time"><?=$post['posted_at']?></p>
+        </div>
+        <br>   
