@@ -94,7 +94,6 @@
     flex-flow: column;
     padding: 20px;
     border-right: 1px solid black;
-    order: -1;
 }
 
 .container__page{
