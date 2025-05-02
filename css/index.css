@@ -33,20 +33,25 @@
 }
 
 .posts__button{
+    display: inline-flex;
     width: 101px;
     height: 30px;
+    align-items: center;
+    gap: 10px;
     text-align: right;
     border-radius: 6px;
     background-color: #f2f3f5;
+    border-color: #f2f3f5;
 }
 
 .images{
     display: flex;
-    align-self: center;
+    align-items: center;
     flex-flow: row wrap;
     max-width: 972px;
     max-height: 1621.65px;
     gap: 2.48px;
+    padding: 20px 0 0 0;
 }
 
 .images__image{
@@ -58,8 +63,9 @@
 }
 
 .side__icons__side__icon{
-    max-width: 24px;
-    max-height: 24px;
+    padding: 10px 0;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .side__bar__side__icons{
@@ -82,17 +88,21 @@
 }
 
 .side__bar{
-    max-height: 1080px;
+    max-width: 40px;
+    height: 1040px;
     display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
     flex-flow: column;
+    padding: 20px;
+    border-right: 1px solid black;
+    order: -1;
 }
 
 .container__page{
+    height: 1080px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: flex-end; /* Центрирование по вертикали */
+    align-items: center; 
     flex-flow: column;
 }
 
@@ -102,7 +112,10 @@
 }
 
 .posts__button__image{
-    z-index: 2;
     justify-self: center;
+}
 
+.container{
+    display: flex;
+    height: 1060px;
 }
