@@ -25,4 +25,4 @@ function password(passlen) {
     }
 }
 
-console.log(password(1))
+console.log(password(20))

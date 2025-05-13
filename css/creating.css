@@ -1,0 +1,147 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+}
+
+.creating__container{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container__headline{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.headline__back{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline__new{
+    height: 100%;
+    width: 117px;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__editor{
+    width: 474px;
+}
+
+.editor__push{
+    display: flex;
+    width: 474px;
+    height: 534px;
+    justify-content: center;
+    align-items: center;
+}
+
+.push__image{
+    display: flex;
+    background-color: #F2F3F5;
+    width: 474px;
+    height: 474px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 143px;
+    height: 158px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.image__text{
+    width: 81px;
+    height: 81px;
+    align-self: center;
+}
+
+.image__add{
+    width: 143px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.container__add{
+    height: 30px;
+    width: 125px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3F8AE0;
+}
+
+.container__text{
+    width: 474px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__add__text{
+    width: 474px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.container__button{
+    width: 474px;
+    height: 400px;
+    display: flex;
+    align-items: end;
+}
+
+.container__push__button{
+    width: 474px;
+    height: 134px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.push__button{
+    color: #FFFFFF;
+    background-color: #B4B4B4;
+    border-radius: 10px;
+    width: 140px;
+    height: 48px;
+    border-color: #B4B4B4;
+}

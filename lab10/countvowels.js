@@ -2,9 +2,9 @@
 
 function countvawers(input){
     if (typeof input === 'string') {
-        let vawers = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
+        const vawers = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
         let vawerscounter = 0
-        // debugger
+
         for (let i = 0; i < input.length; i++) {
             let symbol = input.substring(i, i + 1)
        if (indexOf(symbol) != -1) {

@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Логинация</title>
-</head>
-
-<body>
-    <div class="container__login">
-        <div class="left">
-            <div class="login">
-                <div class="login__text">Войти</div>
-                <img src="images/login.png" alt="login_image" class="login__img">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/login.css" />
+        <title>Логинация</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__entry">
+                <h1 class="login__title">Войти</h1>
+                <img src="images/login.png" alt="login image" class="login__image">
             </div>
-        </div>
-        <div class="right">
-            <form>
-                <div class="login__entrance">
-                    <label for="email" class="entrance__label">Электропочта</label>
-                    <input type="email" class="entrance__input">
-                    <p class="entrance__description">Введите электропочту в формате *****@***.**</p>
-                </div>
-                <div class="login__entrance">
-                    <label for="password" class="entrance__label">Пароль</label>
-                    <input type="password" class="entrance__input">
-                </div>
-                <button type="button" class="entrance__button">Продолжить</button>
-            </form>    
-        </div>
-    </div>
-</body>
-
+        
+            <form class="login__form">
+                <label class="login__label">Электропочта</label>
+                <input type="email" name="email" class="login__input__email">
+                <p class="login__hint">Введите электропочту в формате *****@***.**</p>
+            
+                <label class="login__label">Пароль</label>
+                <input type="password" name="password" class="login__input__pass">
+                <input type="submit" value="Продолжить" class="login__submit">
+            </form>
+        </div> 
+        <script src="js/checkpassword.js"></script>       
+    </body>
 </html>

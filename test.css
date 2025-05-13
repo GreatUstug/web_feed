@@ -1,82 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-.container {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-section {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.left-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.left-section img {
-    width: 100%;
-    height: auto;
-}
-
-.right-section {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.right-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
+.post {
+    width: 300px; /* ширина блога */
+    margin: 20px auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.post-text {
+    overflow: hidden; /* скрываем текст, выходящий за пределы */
+    text-overflow: ellipsis; /* ставим многоточие */
+    display: -webkit-box; /* применяем вебкитовские особенности */
+    -webkit-line-clamp: 2; /* устанавливаем максимальное число строк равным двум */
+    -webkit-box-orient: vertical; /* ориентация блоков вертикально */
+    font-size: 16px;
+    line-height: 1.4em; /* настройка межстрочного интервала */
+}
+
+.expand-toggle {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.expanded {
+    -webkit-line-clamp: none; /* снимаем ограничение на количество строк */
+    max-height: none; /* удаляем ограничение максимальной высоты */
 }

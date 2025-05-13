@@ -1,117 +1,97 @@
-* {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.login__text{
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 180px;
-    letter-spacing: -1.5px;
-    background-image: ;
-}
-
-.login__img{
+body {
+    min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
-    max-width: 462px; 
-    max-height: 501px;
-    background-image: '';
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.login__entrance{
-    d
-    margin-bottom: 20px;
-    width: 100%;
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
 }
 
-.entrance__container{
-    gap: 16px;
+.login__entry {
+    position: relative;
+    margin-right: 100px;
 }
 
-.entrance__login{
-    max-width: 343px;
-    max-height: 88px;
-    gap: 5px;
+.login__title {
+    font-size: 140px;
+    font-weight: 600;
+    font-family: "Golos Text";
+    position: absolute;
+    margin: 0;
+    top: -100px;
+    left: -90px;
 }
 
-.container__pass{
-    max-width: 343px;
-    max-height: 66px;
-    gap: 5px;
+.login__image {
+    display: block;
 }
 
-.entrance__label{
-    max-width: 343px;
-    max-height: 18px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -0.15px;
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    margin: auto;
+}
+
+.login__hint {
+    margin: 0;
+    color: rgba(128, 128, 128, 1);
+}
+
+
+.login__label {
+    margin-bottom: 5px;
     color: #222222;
+    font-size: 15px;
+    font-family: "Golos Text";
+    margin-top: 16px;
 }
 
-.entrance__input{
-    max-width: 343px;
-    max-height: 44px;
+.login__input__email {
+    width: 100%;
+    height: 44px;
+    border: 0;
     border-radius: 10px;
-    padding: 13px, 12px, 13px, 12px;
-    background-color: #F2F3F5;
-    border-color: #F2F3F5;    
+    background-color: #f2f3f5;
 }
 
-.entrance__description{
-    max-width: 343px;
-    max-height: 16px;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: -0.08px;
+.login__input__pass {
+    width: 100%;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #f2f3f5;
+}
+
+.login__form-hint {
     color: #808080;
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: "Golos Text";
 }
 
-.entrance__button{
-    max-width: 343px;
-    max-height: 48px;
+.login__submit {
+    width: 100%;
+    height: 48px;
+    margin: 32px auto 0;
+    background-color: #222222;
+    text-align: center;
+    padding: 5px;
+    color: white;
     font-size: 16px;
     font-weight: 500;
+    font-family: "Golos Text";
+    cursor: pointer;
+    border: none;
     border-radius: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    color: #FFFFFF;
-    background-color: #222222;
 }
 
-.container__login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.error{
+    border-color:red ;
 }
-
-.login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-}
-
-.left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right{
-    width: 50%;
-    height: 1080px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-

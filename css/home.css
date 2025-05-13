@@ -48,10 +48,15 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .post__expansion {
-    overflow: visible; /* Полностью показываем текст */
+    display: none;
     font-size: 15px;
     font-weight: 400;
     color: #808080;
@@ -274,4 +279,9 @@
     font-size: 15px;
     font-weight: 500;
     color: #ffffff;
+}
+
+.expanded {
+    -webkit-line-clamp: none; /* снимаем ограничение на количество строк */
+    max-height: none; /* удаляем ограничение максимальной высоты */
 }
