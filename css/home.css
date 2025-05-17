@@ -13,7 +13,7 @@
 .container__posts {
     display: flex;
     flex-grow: 1;
-    justify-content: flex-start; /* Центрирование по вертикали */
+    justify-content: flex-start;
     align-items: center; 
     flex-flow: column;
     padding: 40px 0 0 0;
@@ -24,7 +24,7 @@
     max-width: 474px;
     max-height: 474px;
     padding: 20px 0 20px 0;
-    display: none;
+    display: block;
 }
 
 .post__liza__still__life {
@@ -35,8 +35,6 @@
 
 
 .posts__user {
-    max-width: 91px;
-    max-height: 18px;
     font-size: 14px;
     font-weight: 500;
     vertical-align: middle;
@@ -56,7 +54,8 @@
 }
 
 .post__expansion {
-    display: none;
+    display: block;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 400;
     color: #808080;

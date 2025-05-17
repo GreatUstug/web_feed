@@ -18,7 +18,7 @@ if (!isset($data["title"]) || !isset($data["content"])) {
 $postData = [
     "id" => intval($data['id']),
     "title" => htmlspecialchars($data['title']),
-    "subtitle" => intval($data['subtitle']),
+    "subtitle" => htmlspecialchars($data['subtitle']),
     "content" => htmlspecialchars($data['content']),
     "user_id" => intval($data['user_id']),
     "posted_at" => htmlspecialchars($data['posted_at']),

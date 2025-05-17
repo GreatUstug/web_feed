@@ -1,45 +1,44 @@
-document.querySelectorAll('.login__form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('login__form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-    const email = document.querySelectorAll('emailInput');
-    const password = document.querySelectorAll('passwordInput');
+    const emailInput = document.getElementById('login__input__email');
+    const passwordInput = document.getElementById('login__input__pass');
+    let isValid = true;
 
-    let valid = true;
-
-    if (!validateEmail(email.value)) {
-        addErrorStyle(email);
-        valid = false;
+    // Проверка email с использованием регулярного выражения
+    if (!validateEmail(emailInput.value)) {
+        showError(emailInput);
+        isValid = false;
     } else {
-        removeErrorStyle(email);
+        hideError(emailInput);
     }
 
-    if (!validatePassword(password.value)) {
-        addErrorStyle(password);
-        valid = false;
+    // Простая проверка длины пароля (минимум 6 символов)
+    if (passwordInput.value.length < 6) {
+        showError(passwordInput);
+        isValid = false;
     } else {
-        removeErrorStyle(password);
+        hideError(passwordInput);
     }
 
-    if (valid) {
+    if (isValid) {
         alert("Данные введены верно!");
     }
 });
 
+// Функция проверки формата email
 function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Простое регулярное выражение для базовой проверки почты
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Регулярное выражение для валидности email
 }
 
-// Проверка длины пароля
-function validatePassword(password) {
-    return password.length >= 4 && password.length <= 20;
+// Показ ошибок
+function showError(inputField) {
+    inputField.classList.add('error'); // Подсветка красного цвета
+    login__error__bar.style.display = "flex";
 }
 
-// Добавление красного контура при ошибке
-function addErrorStyle(inputField) {
-    inputField.classList.add('error');
-}
-
-// Удаление красного контура при успешной проверке
-function removeErrorStyle(inputField) {
+// Скрытие ошибок
+function hideError(inputField) {
     inputField.classList.remove('error');
+    login__error__bar.style.display = "none";
 }

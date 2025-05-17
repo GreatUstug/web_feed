@@ -20,7 +20,7 @@ try {
     <head>
         <meta charset="utf-8">
         <title>Пост блога</title>
-        <link rel="stylesheet" href="css/post.css">
+        <link rel="stylesheet" href="css/home.css">
     </head> 
     <body>
         <?php
@@ -32,5 +32,6 @@ try {
             echo '<h2>Нет опубликованных записей.</h2>';
         }
         ?>
+    <script src="js/text.js"></script>
     </body>
 </html>

@@ -1,13 +1,14 @@
 // "use strict"
 
-function countvawers(input){
+function countvawers(input) {
     if (typeof input === 'string') {
         const vawers = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
         let vawerscounter = 0
 
         for (let i = 0; i < input.length; i++) {
             let symbol = input.substring(i, i + 1)
-       if (indexOf(symbol) != -1) {
+            if (vawers.indexOf(symbol) != -1) 
+            {
                 vawerscounter++
             }
         }

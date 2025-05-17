@@ -1,45 +1,58 @@
-document.querySelectorAll('.login__form').addEventListener('submit', function(event) {
-    event.preventDefault();
+let uploadedFiles = []; // Массив для хранения выбранных файлов
 
-    const email = document.querySelectorAll('emailInput');
-    const password = document.querySelectorAll('passwordInput');
+// Открытие окна создания поста
+function showCreatePostForm() {
+    document.getElementById('create-post').style.display = 'block';
+}
 
-    let valid = true;
+// Имитация выбора файла через скрытый input[type="file"]
+function triggerFileInput() {
+    document.getElementById('file-input').click();
+}
 
-    if (!validateEmail(email.value)) {
-        addErrorStyle(email);
-        valid = false;
+// Просмотр предварительно выбранных изображений
+function previewImages() {
+    const galleryContainer = document.querySelector('.gallery-container');
+    galleryContainer.innerHTML = ''; // очищаем галерею
+    uploadedFiles = [...document.getElementById('file-input').files];
+
+    uploadedFiles.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const img = document.createElement('img');
+            img.src = event.target.result;
+            galleryContainer.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+    });
+
+    validatePublishButton();
+}
+
+// Проверка доступности кнопки "Опубликовать"
+function validatePublishButton() {
+    const publishBtn = document.getElementById('publish-btn');
+    const captionTextArea = document.getElementById('post-caption');
+    const hasImages = uploadedFiles.length > 0;
+    const hasCaption = captionTextArea.value.trim() !== "";
+
+    if(hasImages && hasCaption) {
+        publishBtn.removeAttribute('disabled');
     } else {
-        removeErrorStyle(email);
+        publishBtn.setAttribute('disabled', '');
     }
+}
 
-    if (!validatePassword(password.value)) {
-        addErrorStyle(password);
-        valid = false;
-    } else {
-        removeErrorStyle(password);
-    }
+// Подготовка формы к отправке
+document.getElementById('post-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // предотвращаем перезагрузку страницы
 
-    if (valid) {
-        alert("Данные введены верно!");
-    }
+    const caption = document.getElementById('post-caption').value;
+    const photos = uploadedFiles.map(file => file.name);
+
+    console.log('Форматированный объект отправки:');
+    console.log('Текст:', caption);
+    console.log('Фотографии:', photos.join(', '));
+
+    // Здесь можно реализовать отправку на сервер
 });
-
-function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Простое регулярное выражение для базовой проверки почты
-}
-
-// Проверка длины пароля
-function validatePassword(password) {
-    return password.length >= 4 && password.length <= 20;
-}
-
-// Добавление красного контура при ошибке
-function addErrorStyle(inputField) {
-    inputField.classList.add('error');
-}
-
-// Удаление красного контура при успешной проверке
-function removeErrorStyle(inputField) {
-    inputField.classList.remove('error');
-}

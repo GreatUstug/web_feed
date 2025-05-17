@@ -22,6 +22,6 @@ function closeModal() {
     window.removeEventListener("keydown", handleKeyDown);
 }
 
-
+picture.addEventListener("click", openModal);
 closeButton.addEventListener("click", closeModal);
 // domload Лучше класс        

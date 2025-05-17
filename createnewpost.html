@@ -19,7 +19,8 @@
                 <div class="push__image">
                     <div class="image">
                         <img src="images/Text.png" alt="Text" class="image__text">
-                        <button type="button" class="image__add">Добавить фото</button>
+                        <input type="file" id="file-input" accept="image/*" multiple style="display: none;" onchange="previewImages()">
+                        <button type="button" class="image__add" onclick="triggerFileInput()">Добавить фото</button>
                     </div>
                 </div>
             </div>
@@ -37,6 +38,7 @@
             </div>
         </div>
     </div>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>

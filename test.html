@@ -2,20 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Форма Входа</title>
-    <style> .error { border-color: red; } </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание поста</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <form id="loginForm">
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="emailInput"><br>
-        
-        <label for="password">Пароль:</label><br>
-        <input type="password" name="password" id="passwordInput"><br>
-        
-        <button type="submit">Войти</button>
-    </form>
-    
-    <script src="validation.js"></script>
+    <aside class="sidebar">
+        <button onclick="showCreatePostForm()">+</button>
+    </aside>
+
+    <main role="main">
+        <section class="create-post" id="create-post" style="display: none;">
+            <h2>Создать пост</h2>
+            <form action="#" enctype="multipart/form-data" id="post-form">
+                <div class="upload-section">
+                    <p>Фотография (-и):</p>
+                    <input type="file" id="file-input" accept="image/*" multiple style="display: none;" onchange="previewImages()">
+                    <button type="button" class="btn-add-photo" onclick="triggerFileInput()">Добавить фото</button>
+                    <div class="gallery-container"></div>
+                </div>
+                
+                <div class="caption-section">
+                    <p>Подпись:</p>
+                    <textarea id="post-caption" placeholder="Добавьте описание..."></textarea>
+                </div>
+                
+                <button type="submit" id="publish-btn" disabled>Поделиться</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/test.js"></script>
 </body>
 </html>

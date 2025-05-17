@@ -12,14 +12,15 @@
                 <img src="images/login.png" alt="login image" class="login__image">
             </div>
         
-            <form class="login__form">
+            <form id="login__form">
+                <div id="login__error__bar">🤓 Поля обязательные</div>
                 <label class="login__label">Электропочта</label>
-                <input type="email" name="email" class="login__input__email">
+                <input type="email" name="email" id="login__input__email">
                 <p class="login__hint">Введите электропочту в формате *****@***.**</p>
             
                 <label class="login__label">Пароль</label>
-                <input type="password" name="password" class="login__input__pass">
-                <input type="submit" value="Продолжить" class="login__submit">
+                <input type="password" name="password" id="login__input__pass">
+                <button type="submit" class="login__submit">Продолжить</button>
             </form>
         </div> 
         <script src="js/checkpassword.js"></script>       

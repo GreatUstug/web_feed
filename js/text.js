@@ -9,6 +9,8 @@ document.querySelectorAll('.post__comment__').forEach(post => {
    
     if (shouldShowExpandButton()) {
         expandButton.style.display = 'block';
+    } else {
+        expandButton.style.display = 'none';
     }
 
     expandButton.addEventListener('click', () => {

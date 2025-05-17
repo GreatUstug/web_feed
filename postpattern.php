@@ -1,29 +1,19 @@
-<div id="container">
-        <aside class="side__bar">
-            <img src="images/home.png" alt="icon_home" class="side__bar__side__icons">
-            <img src="images/user.png" alt="icon_user" class="side__bar__side__icons">
-            <img src="images/plus.png" alt="icon_plus" class="side__bar__side__icons">
-        </aside>
         <main class="container__posts">
             <div class="post">
                 <div class="post__user">
                     <div class="user">
-                        <img src="images/vanya.png" alt="user__image" class="posts__user__image">
-                        <span class="posts__user">Ваня Денисов</span>
+                        <img src="images/nedurka/avatar.png" alt="user__image" class="posts__user__image">
+                        <span class="posts__user">(Не)дурное сообщество</span>
                     </div>
                     <img src="images/edit.png" alt="edit" class="post__edit">
                 </div>
                 <div>
                     <div>
-                        <img src="images/winter_street.png" alt="post__picture" class="post__picture"
-                            onclick="openModal(event)">
-                        <img src="images/1/image2.png" alt="post__picture" class="post__picture"
-                            onclick="openModal(event)">
-                        <img src="images/1/image3.png" alt="post__picture" class="post__picture"
-                            onclick="openModal(event)">
+                        <img src=<?=$post['im']?> alt="post__picture" class="post__picture">
                         <div class="slider-controls">
                             <div class="left__slider">
-                                <button class="prev__btn"><</button>
+                                <button class="prev__btn">
+                                    << /button>
                             </div>
                             <div class="right__slider">
                                 <div class="slider__button">
@@ -35,24 +25,12 @@
                     </div>
                     <img src="images/reaction.png" alt="reaction" class="post__vanya__reaction">
                     <div class="post__comment__">
-                        <div class="post__comment"
-                            data-full-text="Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном снегом по ручку двери...» ">
-                            Так красиво сегодня на улице! Настоящая зима))
-                            Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом
-                            дне, в гор...</div>
-                        <button class="post__expansion">ещё</button>
+                        <div class="posts__user"><?=$post['title']?></div>
+                        <div class="posts__user"><?=$post['subtitle']?></div>
+                        <div class="post__comment"><?=$post['content']?></div>
+                        <div class="post__expansion">ещё</div>
                     </div>
-                    <div class="post__time">2 часа назад</div>
-                </div>
-                <div class="posts__post__liza">
-                    <div class="post__user">
-                        <div class="user">
-                            <img src="images/liza.png" alt="liza_demina" class="posts__user__image">
-                            <span class="posts__user">Лиза Демина</span>
-                        </div>
-                    </div>
-                    <img src="images/still_life.png" alt="still_life" class="post__liza__still__life">
+                    <div class="post__time"><?=$post['posted_at']?></div>
                 </div>
             </div>
         </main>
-    </div>
